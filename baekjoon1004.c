@@ -24,6 +24,7 @@ int main()
     }
     for(int i=0;i<T;i++)
         printf("%d\n", result[i]);
+    free(result);
 
     return 0;
 }
