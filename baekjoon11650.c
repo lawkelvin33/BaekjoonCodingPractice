@@ -6,12 +6,12 @@ void merge(int N, int* x, int* y, int* order, int low, int mid, int high){
     int tmp[N];
     
     while(i<=mid && j<=high){
-        if(x[i]<x[j])
+        if(x[order[i]]<x[order[j]])
             tmp[k++] = order[i++];
-        else if(x[i]>x[j])
+        else if(x[order[i]]>x[order[j]])
             tmp[k++] = order[j++];
         else{
-            if(y[i]<y[j])
+            if(y[order[i]]<y[order[j]])
                 tmp[k++] = order[i++];
             else
                 tmp[k++] = order[j++];
