@@ -1,1 +1,1 @@
-# C++CodingPractice
+# Baekjoon Coding Practice
